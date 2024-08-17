@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-House-Tailwind</title>
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/82b4de73d1.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <!-- main content  -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-20">
+        <!-- header section  -->
+        <header class="flex pt-10 pb-20">
+            <!-- text  -->
+            <div>
+                <h1 class="text-5xl md:text-7xl">
+                    It's good <br>
+                    tea time at The <br> Tea House
+                </h1>
+                <br>
+                <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+                    Taste
+                    Buds.</p>
+                <br>
+                <button
+                    class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore
+                    More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <!-- image  -->
+            <div class="relative">
+                <img class="w-full" src="./assets/images/banner.png" alt="">
+                <!-- card  -->
+                <div
+                    class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 rounded-lg top-28 md:top-80 md:left-32 lg:left-20">
+                    <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+                    <div class="ml-2">
+                        <h2 class="lg:text-2xl font-bold">5.00</h2>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+    <button onclick="call()">click here</button>
+    <script>
+        function call() {
+            alert('Hello Imran');
+            let answer = prompt('did you finish your module?');
+            alert(answer)
+        }
+    </script>
+</body>
+
+</html>
